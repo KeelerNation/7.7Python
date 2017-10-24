@@ -1,19 +1,17 @@
 import re
 
-def stringOperations(choice):
-    if re.search(',',choice):
-        splitWords = choice.split(',')
-        print()
-        print("First word: ",splitWords[0].strip())
-        print("Second word: ",splitWords[1].strip())
-        print()
-	else:
-    	print('Error:No comma in string')
+def stringOperations(string):
+    if re.search(',',string):
+        splitWords = string.split(',')
+        print('First word:',splitWords[0].strip())
+        print('Second word:',splitWords[1].strip())
+        print('')
+    else:
+    	print('Error: No comma in string.\n')
 
 while True:
-	print()
-	choice = input('Enter input string:\n')
-	if choice =='q':
-    	break
+    string = input('Enter input string:\n')
+    if string =='q':
+        break
     else:
-        stringOperations(choice)
+        stringOperations(string)
