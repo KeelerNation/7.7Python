@@ -10,3 +10,9 @@ print('You entered %s\n' % header2)
 
 while True:
     data = input('Enter a data point (-1 to stop input:\n')
+    if data == '-1':
+        break
+    data2 = data.split(',')
+    chart = {data2[0] : data2[1]}
+    chart[data2[2]] = data2[1]
+    print(chart)
