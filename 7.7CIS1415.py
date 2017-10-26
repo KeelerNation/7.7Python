@@ -19,6 +19,7 @@ data = ''
 chart = {}
 
 name_list = []
+num_list = []
 
 while data!='-1':
     while True:
@@ -38,14 +39,15 @@ while data!='-1':
             datab = datab.replace(' ', '')
             chart.update({dataa: datab})
             name_list.append(dataa)
+            num_list.append(datab)
             print('Data string:', dataa)
             print('Data integer:', datab)
 
-
+num = 0
 
 for name in name_list:
-    num = 0
-    print(name, '|', chart[0])
+    print(name, '|', num_list[num])
+    num = num + 1
 
 
 
