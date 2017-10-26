@@ -1,7 +1,6 @@
 string = input('Enter your full name:\n')
 
 new = string.split(' ')
-print(new)
 newstr1 = new[0]
 newstr2 = new[1]
 newstr3 = new[2]
