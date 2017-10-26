@@ -21,8 +21,7 @@ chart = {}
 name_list = []
 
 while data!='-1':
-    good_input = False
-    while not good_input:
+    while True:
         data = input('Enter a data point (-1 to stop input:\n')
         if (data == '-1'):
             break
