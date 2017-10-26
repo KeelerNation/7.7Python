@@ -1,5 +1,3 @@
-import re
-
 def stringOperations(string):
     if re.search(',',string):
         splitWords = string.split(',')
@@ -8,6 +6,7 @@ def stringOperations(string):
         print('')
     else:
     	print('Error: No comma in string.\n')
+    return
 
 while True:
     string = input('Enter input string:\n')
