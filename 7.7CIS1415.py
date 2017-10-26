@@ -1,11 +1,11 @@
-title = input('Enter a title for the date:\n')
+title = input('Enter a title for the data:\n')
 print('You entered: %s\n' % title)
 
-header1 = input('Enter the column 1 Header:\n')
-print('You entered %s\n' % header1)
+header1 = input('Enter the column 1 header:\n')
+print('You entered: %s\n' % header1)
 
-header2 = input('Enter the column 2 Header:\n')
-print('You entered %s\n' % header2)
+header2 = input('Enter the column 2 header:\n')
+print('You entered: %s\n' % header2)
 
 
 
@@ -23,14 +23,14 @@ num_list = []
 
 while data!='-1':
     while True:
-        data = input('Enter a data point (-1 to stop input:\n')
+        data = input('Enter a data point (-1 to stop input):\n')
         if (data == '-1'):
             break
         elif ',' not in data:
-            print('Error: No comma in string.')
+            print('Error: No comma in string.\n')
 
         elif len(data.split(','))> 2:
-            print('Too many commas in input.')
+            print('Error: Too many commas in input.\n')
 
         else:
             data2 = data.split(',')
@@ -41,7 +41,7 @@ while data!='-1':
             name_list.append(dataa)
             num_list.append(datab)
             print('Data string:', dataa)
-            print('Data integer:', datab)
+            print('Data integer: &%s' % datab)
 
 
 print('{:>33}'.format(title))
