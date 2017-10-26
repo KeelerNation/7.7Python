@@ -23,7 +23,12 @@ num_list = []
 while data!='-1':
     while True:
         data = input('Enter a data point (-1 to stop input):\n')
-        tt = data.split(',')
+        if ',' in data:
+            data3 = data.split(',')
+            datac = data3[0]
+            datad = data3[1]
+            datad = datad.replace(' ', '')
+
         if (data == '-1'):
             break
         elif ',' not in data:
@@ -32,10 +37,10 @@ while data!='-1':
         elif len(data.split(','))> 2:
             print('Error: Too many commas in input.\n')
 
-        elif (tt[1].isdigit()) == False:
+        elif (datad.isdigit()) == False:
             print('Error: Comma not followed by an integer.\n')
         else:
-            number = int(tt[1])
+            number = int(datad)
             data2 = data.split(',')
             dataa = data2[0]
             datab = data2[1]
@@ -49,8 +54,8 @@ while data!='-1':
 
 
 print('{:>33}'.format(title))
-print('{:<20} | {:>23}'.format(header1, header2))
-print('-'*46)
+print('{:<19} | {:>22}'.format(header1, header2))
+print('-'*44)
 
 
 
