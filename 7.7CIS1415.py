@@ -43,8 +43,10 @@ while data!='-1':
             print('Data integer:', datab)
 
 
-print(chart)
-print('Names', name_list)
+
+for name in name_list:
+    num = 0
+    print(name, '|', chart[0])
 
 
 
