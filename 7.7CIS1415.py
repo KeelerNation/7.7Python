@@ -43,10 +43,16 @@ while data!='-1':
             print('Data string:', dataa)
             print('Data integer:', datab)
 
-num = 0
 
+print('{:>33}'.format(title))
+print('{:<20} | {:>23}'.format(header1, header2))
+print('-'*46)
+
+
+
+num = 0
 for name in name_list:
-    print(name, '|', num_list[num])
+    print('{:<20} | {:>23}'.format(name_list[num], num_list[num]))
     num = num + 1
 
 
