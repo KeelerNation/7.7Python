@@ -42,6 +42,7 @@ while data!='-1':
             num_list.append(datab)
             print('Data string:', dataa)
             print('Data integer: %s' % datab)
+            print('')
 
 
 print('{:>33}'.format(title))
