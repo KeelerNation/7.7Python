@@ -7,7 +7,7 @@ def stringOperations(string):
         print('Second word:',splitWords[1].strip())
         print('')
     else:
-    	print('Error: No comma in string.\n')
+        print('Error: No comma in string.\n')
 
 while True:
     string = input('Enter input string:\n')
