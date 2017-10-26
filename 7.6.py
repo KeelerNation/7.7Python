@@ -1,7 +1,7 @@
 import re
 
 def stringOperations(string):
-    if re.search(',',string):
+    if ',' in string:
         splitWords = string.split(',')
         print('First word:',splitWords[0].strip())
         print('Second word:',splitWords[1].strip())
