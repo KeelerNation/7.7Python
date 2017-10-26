@@ -65,12 +65,11 @@ for name in name_list:
     num = num + 1
 
 
-counter = 0
+
 for x in range(0,len(num_list)):
     y = int(num_list[x])
-    for z in range(0, y):
-        print(name_list[counter], y*'*')
-    counter += 1
+    print(name_list[x], y*'*')
+
 
 
 
