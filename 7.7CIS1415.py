@@ -20,10 +20,10 @@ chart = {}
 
 name_list = []
 num_list = []
-
 while data!='-1':
     while True:
         data = input('Enter a data point (-1 to stop input):\n')
+        tt = data.split(',')
         if (data == '-1'):
             break
         elif ',' not in data:
@@ -32,7 +32,10 @@ while data!='-1':
         elif len(data.split(','))> 2:
             print('Error: Too many commas in input.\n')
 
+        elif (tt[1].isdigit()) == False:
+            print('Error: Comma not followed by an integer.\n')
         else:
+            number = int(tt[1])
             data2 = data.split(',')
             dataa = data2[0]
             datab = data2[1]
