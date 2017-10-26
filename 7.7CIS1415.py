@@ -64,10 +64,13 @@ for name in name_list:
     print('{:<20} | {:>23}'.format(name_list[num], num_list[num]))
     num = num + 1
 
-num23 = 0
-for name21 in name_list:
-   print(name_list[num23], data[num23]*'*')
-   num23 += 1
+
+counter = 0
+for x in range(0,len(num_list)):
+    y = int(num_list[x])
+    for z in range(0, y):
+        print(name_list[counter], y*'*')
+    counter += 1
 
 
 
