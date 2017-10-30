@@ -1,4 +1,4 @@
-phonenumold = int(input("Enter a 10-character telephone number: \n "))
+phonenumold = input("Enter a 10-character telephone number:\n ")
 print(phonenumold)
 
 split = phonenumold.split('-')
