@@ -1,4 +1,4 @@
-phonenumold = input("Enter a 10-character telephone number:\n ")
+phonenumold = input("Enter a 10-character telephone number:\n")
 print(phonenumold)
 
 split = phonenumold.split('-')
@@ -7,22 +7,34 @@ print(split)
 last4 = split[2]
 
 last_num = 0
+L = '-'
+nn = ''
+for let in last4:
 
-while last_num <4:
-    if last4[last_num] is 'A' or "B" or 'C':
-        print('2')
-    if last4[last_num] is 'D' or "E" or 'F':
-        print('3')
-    if last4[last_num] is 'G' or "H" or 'I':
-        print('4')
-    if last4[last_num] is 'J' or "K" or 'L':
-        print('5')
-    if last4[last_num] is 'M' or "N" or 'O':
-        print('6')
-    if last4[last_num] is 'P' or "Q" or 'R' or 'S':
-        print('7')
-    if last4[last_num] is 'T' or "U" or 'V':
-        print('8')
-    if last4[last_num] is 'W' or "X" or 'Y' or 'Z':
-        print('9')
-    last_num += 1
+    if let == 'A' or let == 'B' or let == 'C':
+        new = '2'
+    elif let == 'D' or let == 'E' or let == 'F':
+        new = '3'
+    elif let == 'G' or let == 'H' or let == 'I':
+        new = '4'
+    elif let == 'J' or let == 'K' or let == 'L':
+        new = '5'
+    elif let == 'M' or let == 'N' or let == 'O':
+        new = '6'
+    elif let == 'P' or let == 'Q' or let == 'R' or let == 'S':
+        new = '7'
+    elif let == 'T' or let == 'U' or let == 'V':
+        new = '8'
+    elif let == 'W' or let == 'X' or let == 'Y' or let == 'Z':
+        new = '9'
+
+    nn = nn + new
+
+print(split[0] + L + split[1] + L + nn)
+
+
+
+
+
+
+
