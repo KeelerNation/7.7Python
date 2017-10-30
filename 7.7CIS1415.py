@@ -53,8 +53,8 @@ while data!='-1':
             print('')
 
 
-print('{:>33}'.format(title))
-print('{:<19} | {:>22}'.format(header1, header2))
+print (title.center(44, ' '))
+print('{:<20} | {:>23}'.format(header1, header2))
 print('-'*44)
 
 
@@ -68,7 +68,7 @@ for name in name_list:
 
 for x in range(0,len(num_list)):
     y = int(num_list[x])
-    print(name_list[x], y*'*')
+    print('{:>20} {:}'.format(name_list[x], y*'*'))
 
 
 
