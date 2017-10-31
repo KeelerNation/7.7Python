@@ -8,7 +8,7 @@ def stringOperations(string):
         print('Error: No comma in string.\n')
     return
 
-        print('Error: No comma in string.\n')
+    print('Error: No comma in string.\n')
 
 
 while True:

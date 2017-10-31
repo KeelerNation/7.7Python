@@ -7,13 +7,6 @@ print('You entered: %s\n' % header1)
 header2 = input('Enter the column 2 header:\n')
 print('You entered: %s\n' % header2)
 
-
-
-
-
-
-
-
 data = ''
 
 chart = {}
@@ -63,8 +56,6 @@ num = 0
 for name in name_list:
     print('{:<20} | {:>23}'.format(name_list[num], num_list[num]))
     num = num + 1
-
-
 
 for x in range(0,len(num_list)):
     y = int(num_list[x])

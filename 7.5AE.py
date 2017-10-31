@@ -1,10 +1,5 @@
 
-phone_num_old = input("Enter a 10-character telephone number: \n ")
 
-print(phone_num_old)
-
-split = phone_num_old.split('-')
-print(split)
 
 
 
@@ -33,26 +28,12 @@ def num(split1, split2):
 
         nn = nn + new
     return nn
+phone_num_old = input("Enter a 10-character telephone number:\n")
 
-phonenumold = input("Enter a 10-character telephone number:\n")
-print(phonenumold)
+print(phone_num_old)
 
-split = phonenumold.split('-')
-split1 = split[1]
-split2 = split[2]
+split = phone_num_old.split('-')
 
-last4 = list(split[2])
-print(last4)
-
-first_three = list(split[0])
-print(first_three)
-
-second_three = list(split[1])
-print(second_three)
-
-
-last_num = 0
-L = '-'
 nn = num(split1, split2)
-
+L = '-'
 print(split[0] + L + nn[:3] + L + nn[3:])
